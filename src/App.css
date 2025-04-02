@@ -1,0 +1,55 @@
+.App {
+  text-align: center;
+  margin-top: 200px;
+  color: white;
+}
+
+.weather-form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.weather-input {
+  width: 300px;
+  box-sizing: border-box;
+  padding: 15px;
+  padding-right: 40px;
+  border-radius: 20px;
+  font-size: 22px;
+  margin-bottom: 30px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  outline: none;
+}
+
+.weather-input::placeholder {
+  color: #c8cbcb;
+}
+
+.weather-btn {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.weather-info,
+.weather-temp {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  object-fit: cover;
+  background-color: black;
+}
