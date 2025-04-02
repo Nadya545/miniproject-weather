@@ -10,7 +10,6 @@ function App() {
   async function handleWeather(event) {
     event.preventDefault();
     const data = await fetchWether(city);
-    console.log(data);
     setWeather(data);
   }
   return (
@@ -45,7 +44,14 @@ function App() {
           <>
             <h2 className="weather-city">{weather.name}</h2>
             <p className="weather-temp">{weather.main.temp}℃</p>
-            <p className="weather-info">{weather.weather[0].main}</p>
+            <p className="weather-info">
+              {
+                <img
+                  src={`http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`}
+                  alt={weather.weather[0].description}
+                />
+              }
+            </p>
           </>
         ) : null}
       </div>
