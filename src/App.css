@@ -53,3 +53,7 @@
   object-fit: cover;
   background-color: black;
 }
+
+.title-weather {
+  font-size: 34px;
+}
