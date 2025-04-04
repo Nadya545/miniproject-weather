@@ -33,7 +33,11 @@ function App() {
       <div className="App">
         <h1 className="title-weather">Погода</h1>
         <WeatherForm setCity={setCity} handleWeather={handleWeather} />
-        <WeatherList weather={weather} error={error} />
+        {error ? (
+          <h2 className="error-message">Неправильно введён город!</h2>
+        ) : (
+          <WeatherList weather={weather} error={error} />
+        )}
       </div>
     </>
   );

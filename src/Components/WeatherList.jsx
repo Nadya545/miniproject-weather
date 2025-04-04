@@ -3,7 +3,6 @@ import React from "react";
 const WeatherList = ({ weather, error }) => {
   return (
     <div>
-      {error && <h2 className="error-message">Неправильно введён город!</h2>}
       {weather.name && !error && (
         <>
           <h2 className="weather-city">{weather.name}</h2>
